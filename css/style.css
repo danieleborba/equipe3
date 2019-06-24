@@ -1,0 +1,144 @@
+@charset 'utf-8';
+
+/* FONTES */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500i,500,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+/* ESTILOS UNIVERSAIS */
+* {
+	font-family: 'Montserrat';
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	min-width: 100%;
+}
+
+img.circle {
+	width: 200px;
+	height: 200px;
+}
+
+h1 {
+	font-family: 'Righteous';
+}
+
+p {
+	font-weight: normal;
+}
+
+h5 {
+	font-weight: bold !important;
+	color: white !important;
+}
+
+/* DEIXAR TODAS AS RÁGINAS OCUPANDO A PÁGINA TODA*/
+#descricao {
+	min-height: 101vh;
+	margin-top: -5vh;
+}
+
+/* PÁGINAS */
+/* INICIAL */
+#principal {
+	height: 100vh;
+	margin-bottom: -30vh;
+}
+
+#principal h1 {
+	margin-top: 35vh;
+	margin-bottom: 10vh;
+}
+
+/* PROJETOS */
+#descricao p, h3 {
+	color: white;
+}
+
+#descricao, .coluna {
+	height: 101vh;
+	top: 0;
+}
+
+.img-links {
+	width: 1.2rem;
+}
+
+/* EQUIPE */
+#equipe {
+	padding-bottom: 4em;
+	margin-bottom: 0;
+	min-height: 102vh;
+}
+
+#equipe p {
+	color: hsl(268, 93%, 24%);
+	margin-bottom: 10vh;
+}
+
+#equipe h6 {
+	font-weight: bold;
+	color: #7b1fa2;
+}
+
+#equipe b {
+	font-weight: normal;
+	color: black;
+}
+
+#equipe a {
+	padding-right: 0.5rem;
+}
+
+#equipe h1 {
+	margin-top: 15vh;
+	margin-bottom: 10vh;
+}
+
+/* TÍTULO */
+.titulo {
+	font-family: 'Righteous';
+	font-size: 8rem;
+	text-shadow: 1px 1px .5px grey;
+}
+
+/* MOBILE */
+@media screen and (max-width: 940px) {
+	.titulo, #titulinho {
+		font-size: 5rem;
+	}
+	.img-links {
+		width: 1.5rem;
+	}
+}
+
+.lock {
+	font-size: 6.5rem;
+}
+
+/* ANIMAÇÃO DA SETA */
+.seta {
+	font-size: 6.5rem;
+	animation: shake 2.5s; 
+	animation-iteration-count: infinite; 
+}
+
+@keyframes shake {
+  0% { transform: translate(3px, 3px) rotate(0deg); }
+  10% { transform: translate(-3px, -3px) rotate(0deg); }
+  20% { transform: translate(3px, 3px) rotate(0deg); }
+  30% { transform: translate(-3px, -3px) rotate(0deg); }
+  40% { transform: translate(3px, 3px) rotate(0deg); }
+  50% { transform: translate(-3px, -3px) rotate(0deg); }
+  60% { transform: translate(3px, 3px) rotate(0deg); }
+  70% { transform: translate(-3px, -3px) rotate(0deg); }
+  80% { transform: translate(3px, 3px) rotate(0deg); }
+  90% { transform: translate(-3px, -3px) rotate(0deg); }
+  100% { transform: translate(3px, 3px) rotate(0deg); }
+}
